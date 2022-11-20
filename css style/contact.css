@@ -1,0 +1,46 @@
+main{
+    background-image: url("../source/img/box1-bg.svg");
+    height:71vh;
+    max-width: 100vw;
+}
+
+form{
+    height:100%;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(9px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formControl{
+
+    box-sizing: border-box;
+    width:70%;
+    margin: 0.5em;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formControl input, .formControl textarea{
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 0.25em;
+    border-radius: 0.4em;
+    border: 2px solid black;
+
+    color: white;
+}
+
+textarea{
+    width:70%;
+    flex-grow: 1;
+}
+
+form input::placeholder,form textarea::placeholder{
+    color:rgba(255, 255, 255, 0.568);
+}
